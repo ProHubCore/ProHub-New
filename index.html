@@ -3,41 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProHub Start</title>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>ProHub Core</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
 
   <header>
-    <h1 data-aos="fade-down">ProHub</h1>
+    <h1>Добро пожаловать в ProHub</h1>
     <nav>
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+      <a href="#about">О нас</a> |
+      <a href="#services">Услуги</a> |
+      <a href="#contact">Контакты</a>
     </nav>
   </header>
 
   <main>
-    <section data-aos="fade-up">
-      <h2>Добро пожаловать</h2>
-      <p>Это твой первый сайт. Мы делаем его вместе — шаг за шагом.</p>
-      <button id="changeTextBtn">Нажми меня</button>
-      <p id="demoText">Тут будет изменение текста</p>
+    <section id="about">
+      <h2>О нас</h2>
+      <p>Мы создаём сильные digital-решения: сайты, каналы, влияние.</p>
+      <img src="https://via.placeholder.com/400" alt="Фото проекта">
+    </section>
+
+    <section id="services">
+      <h2>Услуги</h2>
+      <ul>
+        <li>Создание сайтов</li>
+        <li>Брендинг под ключ</li>
+        <li>Digital-упаковка</li>
+      </ul>
     </section>
   </main>
 
-  <footer data-aos="fade-up">
-    <p>© 2025 ProHubCore</p>
+  <footer>
+    <p>&copy; 2025 ProHubCore. Все права защищены.</p>
   </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
 </body>
 </html>

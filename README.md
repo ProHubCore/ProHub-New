@@ -7,3 +7,5 @@ git push -u origin main
 
 git checkout -b layout-structure - Новая ветка черновик
 git push -u origin layout-structure 
+
+Как предотвращать перезагрузку страницы (preventDefault),
