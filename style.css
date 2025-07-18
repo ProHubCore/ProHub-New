@@ -46,3 +46,14 @@ p {
     opacity: 1;
   }
 }
+
+#main-title {
+  opacity: 0;
+  transform: translate(-20px);
+  transition: all 1s ease;
+}
+
+#main-title.show {
+  opacity: 1;
+  transform: translate(0);
+}
