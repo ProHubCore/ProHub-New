@@ -2,30 +2,39 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Структура сайта</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProHub Start</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
+
   <header>
-    <h1>ProHub Start</h1>
+    <h1 data-aos="fade-down">ProHub</h1>
     <nav>
-      <a href="#">Главная</a>
-      <a href="#">О нас</a>
-      <a href="#">Контакты</a>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Добро пожаловать!</h2>
-    <p>Это твой стартовый сайт.</p>
-    <button>Нажми меня</button>
+    <section data-aos="fade-up">
+      <h2>Добро пожаловать</h2>
+      <p>Это твой первый сайт. Мы делаем его вместе — шаг за шагом.</p>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 ProHub. Все права защищены.</p>
+  <footer data-aos="fade-up">
+    <p>© 2025 ProHubCore</p>
   </footer>
 
-</body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
+</body>
 </html>
