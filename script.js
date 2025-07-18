@@ -1,6 +1,5 @@
-const button = document.getElementById('clickMeBtn');
-const message = document.getElementById('message');
+const button = document.querySelector('button');
 
 button.addEventListener('click', () => {
-  message.textContent = 'Ты нажал на кнопку. Молодец!';
+  alert('Ты нажал на кнопку!');
 });
