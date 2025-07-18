@@ -1,6 +1,6 @@
-console.log('Hello')
+const button = document.getElementById('clickMeBtn');
+const message = document.getElementById('message');
 
-window.addEventListener("DOMContentLoaded", () => {
-    const title = document.getElementById('main-title');
-    title.classList.add("show");
-})
+button.addEventListener('click', () => {
+  message.textContent = 'Ты нажал на кнопку. Молодец!';
+});
