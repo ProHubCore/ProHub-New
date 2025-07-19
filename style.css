@@ -1,23 +1,29 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-}
-
-header, footer {
-  background-color: #111;
+  font-family: sans-serif;
+  background: #111;
   color: #fff;
-  padding: 20px;
-  text-align: center;
 }
 
-main {
-  padding: 40px 20px;
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.box {
+  background: #444;
+  padding: 40px;
+  text-align: center;
+  flex: 1;
+  border-radius: 10px;
+}
+
+/* 🔻 Медиа-запрос для адаптива */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
