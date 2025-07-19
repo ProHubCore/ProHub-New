@@ -1,29 +1,8 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #111;
-  color: #fff;
+.block {
+  opacity: 0; /* блок изначально прозрачный */
+  transition: opacity 2s; /* анимация перехода прозрачности за 2 секунды */
 }
 
-.container {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  justify-content: center;
-}
-
-.box {
-  background: #444;
-  padding: 40px;
-  text-align: center;
-  flex: 1;
-  border-radius: 10px;
-}
-
-/* 🔻 Медиа-запрос для адаптива */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+.block.show {
+  opacity: 1; /* когда добавится класс show, блок станет видимым */
 }
